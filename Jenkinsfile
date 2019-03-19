@@ -10,7 +10,7 @@ node() {
         doGenerateSubmoduleConfigurations: false,
         extensions: [[$class: 'CleanBeforeCheckout']],
         submoduleCfg: [],
-        userRemoteConfigs: [[credentialsId: 'awahib', url: '']]])
+        userRemoteConfigs: [[credentialsId: 'dev_deploy_ssh', url: 'git@git.eogresources.com:ldavis2/chat_test.git']]])
     }
 
     stage('build') {
